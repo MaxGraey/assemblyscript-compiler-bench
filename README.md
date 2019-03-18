@@ -6,7 +6,7 @@ Benchmarks inspired by ["V" language](https://github.com/vlang-io/V/blob/master/
 time yarn build
 ```
 
-which build unoptimized `index.ts` file with 400,000 lines of code
+which build unoptimized `wasm` file from 400,000 lines of typescripty code
 
 ### Results
 
