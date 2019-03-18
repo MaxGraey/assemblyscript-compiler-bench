@@ -1,8 +1,12 @@
+Benchmarks inspired by ["V" language](https://github.com/vlang-io/V/blob/master/website/compilation_speed_test_gen.v)
+
 ### Build / Run bench
 
 ```
 yarn build
 ```
+
+which build unoptimized `index.ts` file with 400,000 lines of code
 
 ### Results
 
