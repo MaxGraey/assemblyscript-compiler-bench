@@ -24,5 +24,5 @@ Optimize  : N/A
 
 real  0m4.482s
 user  0m5.678s
-sys	  0m0.926s
+sys	0m0.926s
 ```
