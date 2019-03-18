@@ -7,7 +7,8 @@ yarn bench-as
 yarn bench-rs
 ```
 
-which build unoptimized `wasm` file from 400,000 lines of typescripty code
+`yarn bench-as` build unoptimized `wasm` file from 400,000 lines of typescripty code
+`yarn bench-rs` compile to native binary file from 400,000 lines of rust code
 
 ### Results (AssemblyScript)
 
