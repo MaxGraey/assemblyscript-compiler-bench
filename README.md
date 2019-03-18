@@ -22,7 +22,7 @@ Validate  : N/A
 Optimize  : N/A
 ✨  Done in 3.92s.
 
-real	0m4.482s
-user	0m5.678s
+real  0m4.482s
+user  0m5.678s
 sys	  0m0.926s
 ```
