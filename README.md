@@ -1,0 +1,1 @@
+# assemblyscript-compiler-bench
