@@ -3,12 +3,13 @@ Benchmarks inspired by ["V" language](https://github.com/vlang-io/V/blob/master/
 ### Build / Run bench
 
 ```
-time yarn build
+yarn bench-as
+yarn bench-rs
 ```
 
 which build unoptimized `wasm` file from 400,000 lines of typescripty code
 
-### Results
+### Results (AssemblyScript)
 
 MacBook 2013 (2,3 GHz Intel Core i7)
 
@@ -25,4 +26,14 @@ Optimize  : N/A
 real    0m4.482s
 user    0m5.678s
 sys	0m0.926s
+```
+
+### Results (Rust)
+
+* Fixed version which avoid `println!` macro in every line
+
+```
+real	0m1.107s
+user	0m0.649s
+sys	0m0.468s
 ```

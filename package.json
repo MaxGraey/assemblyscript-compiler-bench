@@ -7,6 +7,9 @@
     "assemblyscript": "github:AssemblyScript/assemblyscript"
   },
   "scripts": {
-    "build": "asc assembly/index.ts -b build/untouched.wasm --measure"
+    "build:as": "asc assembly/index.ts -b build/untouched.wasm --measure",
+    "build:rust": "rustc rust/main.rs --out-dir build -C target-cpu=native -C debuginfo=0 -C opt-level=0 -C lto=off -C codegen-units=4 -C prefer-dynamic -C incremental=false",
+    "bench-as": "time yarn build:as",
+    "bench-rs": "time yarn build:rust"
   }
 }

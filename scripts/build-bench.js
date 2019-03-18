@@ -2,12 +2,32 @@ const fs   = require('fs');
 const path = require('path');
 
 const N = 200;
-let pre = 'declare function log(v: i32): void;\n';
-    pre += 'var a = 0;\n';
 
-for (let i = 0; i < N * 1000; i++) {
-  pre += `a = ${i}; log(a);\n`;
+function buildAssemblyScript() {
+  let builder  = 'declare function log(v: i32): void;\n';
+      builder += 'var a = 0;\n';
+
+  for (let i = 0; i < N * 1000; i++) {
+    builder += `a = ${i}; log(a);\n`;
+  }
+
+  fs.writeFileSync(path.resolve(__dirname, '..', 'assembly', 'index.ts'), builder);
 }
 
-fs.writeFileSync(path.resolve(__dirname, '..', 'assembly', 'index.ts'), pre);
-console.log('test file created!');
+function buildRust() {
+  let builder  = 'fn print_i32(i: i32) { println!("{}", i) }\n';
+      builder += 'fn main() { let mut a;\n';
+
+  for (let i = 0; i < N * 1000; i++) {
+		builder += `a = ${i}; print_i32(a);\n`;
+	}
+  builder += '}';
+
+  fs.writeFileSync(path.resolve(__dirname, '..', 'rust', 'main.rs'), builder);
+}
+
+
+buildAssemblyScript();
+buildRust();
+
+console.log('test files created!');
