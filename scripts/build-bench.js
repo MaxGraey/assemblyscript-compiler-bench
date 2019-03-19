@@ -19,8 +19,8 @@ function buildRust() {
       builder += 'fn main() { let mut a;\n';
 
   for (let i = 0; i < N * 1000; i++) {
-		builder += `a = ${i}; print_i32(a);\n`;
-	}
+    builder += `a = ${i}; print_i32(a);\n`;
+  }
   builder += '}';
 
   fs.writeFileSync(path.resolve(__dirname, '..', 'rust', 'main.rs'), builder);
