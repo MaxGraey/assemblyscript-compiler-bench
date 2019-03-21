@@ -10,7 +10,7 @@ yarn bench-rs
 `yarn bench-as` build unoptimized `wasm` file from 400,000 lines of typescripty code
 `yarn bench-rs` compile to native binary file from 400,000 lines of rust code
 
-### Results (AssemblyScript)
+### Results (AssemblyScript) (21-03-2019)
 
 MacBook 2013 (2,3 GHz Intel Core i7)
 
@@ -29,7 +29,7 @@ user    0m5.678s
 sys	0m0.926s
 ```
 
-### Results (Rust)
+### Results (Rust) (rustc 1.35.0-nightly (a9da8fc9c 2019-03-04))
 
 * Fixed version which avoid `println!` macro in every line
 
