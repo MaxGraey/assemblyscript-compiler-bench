@@ -34,7 +34,7 @@ sys	0m0.926s
 * Fixed version which avoid `println!` macro in every line
 
 ```
-real	0m1.107s
-user	0m0.649s
-sys	0m0.468s
+real	2m11.288s
+user	0m55.398s
+sys	1m8.846s
 ```
