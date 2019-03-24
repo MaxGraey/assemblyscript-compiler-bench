@@ -4,11 +4,11 @@ const path = require('path');
 const N = 200;
 
 function buildAssemblyScript() {
-  let builder  = 'declare function log(v: i32): void;\n';
-      builder += 'var a = 0;\n';
+  let builder  = 'declare function print_i32(i: i32): void;\n';
+      builder += 'var a: i32;\n';
 
   for (let i = 0; i < N * 1000; i++) {
-    builder += `a = ${i}; log(a);\n`;
+    builder += `a = ${i}; print_i32(a);\n`;
   }
 
   fs.writeFileSync(path.resolve(__dirname, '..', 'assembly', 'index.ts'), builder);

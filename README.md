@@ -15,18 +15,18 @@ yarn bench-rs
 MacBook 2013 (2,3 GHz Intel Core i7)
 
 ```
-I/O Read  : 6.416 ms
-I/O Write : 2.864 ms
-Parse     : 1890.312 ms
-Compile   : 820.604 ms
-Emit      : 201.642 ms
+I/O Read  : 7.225 ms
+I/O Write : 4.450 ms
+Parse     : 1747.119 ms
+Compile   : 802.157 ms
+Emit      : 187.787 ms
 Validate  : N/A
 Optimize  : N/A
-✨  Done in 3.92s.
 
-real    0m4.482s
-user    0m5.678s
-sys	0m0.926s
+real	0m4.192s
+user	0m5.299s
+sys	0m0.859s
+✨  Done in 4.25s.
 ```
 
 ### Results (Rust) (rustc 1.35.0-nightly (a9da8fc9c 2019-03-04))
