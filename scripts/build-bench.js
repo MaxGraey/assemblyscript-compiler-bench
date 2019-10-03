@@ -1,7 +1,7 @@
 const fs   = require('fs');
 const path = require('path');
 
-const N = 200;
+const N = 400;
 
 function buildAssemblyScript() {
   let builder  = 'declare function print_i32(i: i32): void;\n';
