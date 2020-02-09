@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "assemblyscript": "github:AssemblyScript/assemblyscript"
+    "assemblyscript": "^0.9.1"
   },
   "scripts": {
     "build:as": "asc assembly/index.ts -b build/untouched.wasm --measure --runtime=none",
