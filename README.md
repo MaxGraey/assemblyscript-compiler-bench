@@ -2,9 +2,9 @@ Benchmarks inspired by ["V" language](https://github.com/vlang-io/V/blob/master/
 
 ### Build / Run bench
 
-```
-yarn bench-as
-yarn bench-rs
+```sh
+yarn bench-as  # or `npm run bench-as`
+yarn bench-rs  # or `npm run bench-rs`
 ```
 
 `yarn bench-as` build unoptimized `wasm` file from 400,000 lines of typescripty code
