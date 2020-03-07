@@ -15,27 +15,26 @@ yarn bench-rs
 15-inch MacBook 2019 (2,3 GHz Intel Core i9)
 
 ```
-I/O Read  : 9.171 ms
-I/O Write : 2.355 ms
-Parse     : 1848.703 ms
-Compile   : 923.112 ms
-Emit      : 411.798 ms
+I/O Read  : 8.950 ms
+I/O Write : 2.959 ms
+Parse     : 1794.794 ms
+Compile   : 930.801 ms
+Emit      : 414.083 ms
 Validate  : N/A
-Optimize  : 0.990 ms
+Optimize  : 0.805 ms
 
-real  0m4.259s
-user  0m6.092s
-sys	  0m0.854s
-✨  Done in 4.29s.
+real  0m4.195s
+user  0m6.039s
+sys   0m0.861s
+✨  Done in 4.23s.
 ```
 
-### Results (Rust) (rustc 1.42.0-nightly (3a3f4a7cb 2019-12-28))
+### Results (Rust) (rustc 1.43.0-nightly (75cf41afb 2020-03-04))
 
 * Fixed version which avoid `println!` macro in every line
 
 ```
-real  4m23.162s
-user  2m8.211s
-sys	  1m46.835s
-
+real  4m28.044s
+user  2m10.426s
+sys   1m47.404s
 ```

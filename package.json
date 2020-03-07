@@ -1,14 +1,14 @@
 {
   "name": "as-speed-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "assemblyscript": "^0.9.1"
+    "assemblyscript": "^0.9.2-nightly.20200304"
   },
   "scripts": {
     "build:as": "asc assembly/index.ts -b build/untouched.wasm --measure --runtime=none",
-    "build:rust": "rustc rust/main.rs --out-dir build -C target-cpu=native -C debuginfo=0 -C opt-level=0 -C lto=off -C codegen-units=4 -C prefer-dynamic -C incremental=false",
+    "build:rust": "rustc rust/main.rs --out-dir build -C target-cpu=native -C link-arg=-s -C debuginfo=0 -C opt-level=0 -C lto=off -C codegen-units=4 -C prefer-dynamic -C incremental=false",
     "bench-as": "time yarn build:as",
     "bench-rs": "time yarn build:rust"
   }
