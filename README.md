@@ -1,4 +1,4 @@
-Benchmarks inspired by ["V" language](https://github.com/vlang-io/V/blob/master/website/compilation_speed_test_gen.v)
+Benchmarks inspired by ["V" language](https://github.com/vlang/v/blob/e2a19cccd013cd1f35daa7eb9a89037d22ff8a93/website/compilation_speed_test_gen.v#L69)
 
 ### Build / Run bench
 
